@@ -1,8 +1,11 @@
-a = int(input())
+# 정수 a 입력받기
+a = int(input().strip())
 
+# 주어진 규칙에 따라 계산
 if a % 2 == 0:
-    a = a // 2
+    result = a // 2
 else:
-    a = (a + 1) // 2
+    result = (a + 1) // 2
 
-print(a)
+# 최종 결과 출력
+print(result)
