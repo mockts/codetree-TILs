@@ -1,7 +1,4 @@
 n = int(input())
-
+print(n)
 if n < 0:
-    print(n)
     print("minus")
-else:
-    print(n)
