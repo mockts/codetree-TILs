@@ -1,12 +1,11 @@
+# 변수 선언 및 입력
 n = int(input())
-
-# 패턴을 만들기 위한 두 가지 줄 모양
-line1 = '* ' * n + '*'
-line2 = '*   ' * n + '*'
-
-# n * n 크기의 패턴 출력
-for i in range(n):
-    if i % 2 == 0:
-        print(line1)
-    else:
-        print(line2)
+	
+# 2*n+1칸의 정사각형에서 i, j에 짝수가 들어가면 *을 출력합니다.
+for i in range(2 * n + 1):
+	for j in range(2 * n + 1):
+		if i % 2 == 0 or j % 2 == 0:
+			print("*", end=" ")
+		else:
+			print(" ", end=" ")
+	print()
