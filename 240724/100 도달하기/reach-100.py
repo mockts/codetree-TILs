@@ -6,7 +6,7 @@ sequence = [first, second]
 
 while True:
     next_value = first + second
-    if next_value > 118:
+    if next_value > 120:
         break
     sequence.append(next_value)
     first, second = second, next_value
