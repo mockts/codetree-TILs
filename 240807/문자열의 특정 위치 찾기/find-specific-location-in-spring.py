@@ -7,4 +7,7 @@ for i in range(length):
         start_idx = i
         break
 
-print(start_idx)
+if start_idx == -1:
+    print("No")
+else:
+    print(start_idx)
