@@ -1,8 +1,5 @@
 s = input()
-x = ''
 
-for i in s:
-    if 'A' <= i <= 'Z':
-        x += i.lower()
-
-print(x)
+for c in s:
+    if 'A' <= c <= 'Z' or 'a' <= c <= 'z':
+        print(c.upper(), end="")
